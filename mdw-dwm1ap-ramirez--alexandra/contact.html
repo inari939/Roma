@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMA</title>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/bf97adab35.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <header id="main-header">
+            <h1 id="logo">Roma</h1>
+            <nav class="main-navigation fondo-oscuro">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="error404.html">Alojamientos</a></li>
+                    <li><a class="active" href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="section-1">
+            <div class="coliseo">
+                <p class="p-1"><strong>Roma</strong> <br> Donde cada calle cuenta una historia y cada rincón es una obra maestra</p>
+            </div>
+        </section>
+       
+        <section id="descripcion">
+            <h2>Contanos tu idea</h2>
+            <p>Creemos juntos un plan de vacaciones deseado, envianos tu idea por escrito en la casilla de mensaje o por archivo adjunto y nos pondremos en contacto de inmediato para asesorarte con tu viaje.</p>
+        </section>
+
+        <section id="section-2">
+            <div id="container-form">
+                <p>contactanos</p>
+                <form name="formulario" method="get" action="gracias.html">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Alejandro Magno" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="edad">Tu edad:</label>
+                        <input type="number" id="edad" name="edad" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="TuEmail@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        <input type="file">
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <img src="img/logo.png" alt="logo de la página">
+            <p>Roma, Italia. Derechos reservados. Creado por Alexandra 👻🌵</p>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:alexandra.ramirez@davinci.edu.ar" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+          </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* Fuentes tipográficas */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 22.4px; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #cbb89d;
+    color: #fff;
+}
+
+#container {
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/img-error404.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-family: 'Baskervville SC', serif;
+    font-size: 10rem;
+    color: #cbb89d;
+    text-shadow: 4px 4px 15px #fff;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #141414;
+    font-family: 'Baskervville SC', serif;
+
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 50px;
+    margin: 0 10px;
+    background-color: transparent;
+    color: #141414;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #665c4f;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn.active {
+    background-color: #665c4f;
+    color: #fff;
+}
+
+#container .buttons a {
+    text-decoration: none;
+}
+
+/*medias querys*/
+
+/*celulares*/
+
+@media screen and (max-width: 480px) {
+
+    #container {
+        background-size: cover;
+    }
+    
+    .heading {
+        font-size: 4rem;
+    }
+
+
+    .sub-heading {
+        font-size: .7rem;
+    }
+
+    .btn {
+        font-size: .8rem;
+    }
+}
+
+/*tablets*/
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+
+    .sub-heading {
+        font-size: 1rem;
+    }
+
+}

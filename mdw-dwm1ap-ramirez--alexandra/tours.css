@@ -1,0 +1,482 @@
+/*Fuentes tipográficas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+/*Estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 22,4%;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;                                            
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+#logo {
+    display: inline-block;
+    background-image: url('img/logo.png');
+    background-position: center center;
+    width: 12.5%;
+    height: 150px;
+    font-size: 0;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+}
+
+strong, h2, nav {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.fondo-oscuro { /*fondo oscuro del nav*/
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute; 
+    top: 0; 
+    width: 100%; 
+    z-index: -1; 
+    border-bottom: 1px solid #665c4f;
+}
+
+
+/*estilos de nav*/
+
+nav {
+    float: right;
+    padding-top:106px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cbb89d;
+    font-weight: bold;
+    position: relative;
+    left: 390px;
+}
+
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0;
+    background: #cbb89d;
+    height: 1px;
+    top: 32px;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+
+}
+
+nav.main-navigation {
+    position: absolute;
+    top: 20px; 
+    right: 50px; 
+    z-index: 2; 
+}
+
+.active::before {
+    width: 100%;
+
+}
+
+
+/*estilos de section 1*/
+
+#section-1{
+    background-image: url('img/nubes-coliseo.jpg');
+    background-position: center center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+#section-1 .p-1 {
+    font-size: 1.5rem;
+    text-align: justify;
+    float: inline-start;
+    margin-top: 30%;
+    color: #cbb89d;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#section-1 .coliseo .p-1 strong {
+    font-size: 3.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #cbb89d;
+}
+
+
+
+#section-1 .p-2 {
+    font-size: 1.5rem;
+    text-align: left;
+    float: inline-start;
+    margin-left: 20%;
+    margin-top: 0;
+    border-bottom-left-radius: 15px;
+}
+
+#section-1 .p-1, .p-2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    width: 100%;
+}
+
+/*section 2*/
+
+#section-2 h2 {
+    color: #cbb89d;
+    border-bottom: 1px solid #cbb89d;
+    padding: 10px;
+}
+#section-2 p {
+    padding: 15px;
+}
+
+#section-2 {
+    background-image: url('img/Athens2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+
+/*section 3*/
+
+#section-3 h2 {
+    background-color: #cbb89d;
+    padding: 20px;
+}
+
+.rectangulo-1 {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 750px;
+    border-radius: 25px;
+    background-color: #cbb89d;
+    margin: 15px;
+}
+
+.rectangulo-1 img {
+    width: 300px;
+    height: 250px;
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.rectangulo-1 h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #141414;
+    font-size: 1rem;
+    position: absolute;
+    top: 40%;
+    left: 34%;
+}
+
+.rectangulo-1 p{
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #141414;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+}
+
+.rectangulo-1 .p-3 {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #141414;
+    position: absolute;
+    top: 48%;
+    left: 25%;
+}
+
+.rectangulo-1 .vuelo {
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #141414;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
+
+.rectangulo-1 button {
+    position: absolute;
+    text-transform: uppercase;
+    top: 70%;
+    left: 20%;
+    padding: 15px 80px;
+    background-color: #cbb89d;
+    border: 1px solid #141414 ;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.rectangulo-1 button:hover {
+    background-color: burlywood;
+    transition: 0.5s;
+    border: burlywood;
+    color: #fff;
+}
+
+
+footer {
+    max-width: 1200px;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    display: flex;
+    padding: 25px;
+}
+
+footer p {
+    color: #fff;
+    font-size: .9rem;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.redes i {
+    padding: 25px;
+}
+
+.redes a {
+    color: #fff;
+}
+
+/*media querys*/
+
+/*celulares*/
+
+@media screen and (max-width: 480px) {
+    #logo {
+        display: none;
+    }
+
+    nav {
+        padding-top: 200px;
+        display: inline-block;
+    }
+
+    nav.main-navigation {
+        width: 50%;
+        position: static;
+    }
+
+    nav ul li a {
+        left: 0;
+        font-size: .8rem;
+    }
+
+    nav.main-navigation {
+        left: 50px;
+    }
+
+    .active {
+        color: #665c4f;
+    }
+
+    .active::before {
+        color: #665c4f;
+        width: 0;
+    }
+
+
+    .fondo-oscuro {
+       border-bottom: none;
+        
+    }
+
+    /*section 1*/
+
+    #section-1 {
+        height: 500px;
+        background-size: cover;
+    }
+
+    #section-1 .coliseo .p-1 strong {
+        font-size: 2.5rem;
+    }
+
+    #section-1 .p-1 {
+        font-size: .9rem;
+    }
+
+    #section-1 .coliseo .p-1 strong {
+        position: absolute;
+        top: 5%;
+        text-shadow: 3px 4px 5px #000;
+    }
+
+    #section-1 .coliseo .p-1 {
+        text-shadow: 3px 4px 5px #fff;
+    }
+
+    /*section 2*/
+
+    #section-2 h2 {
+        font-size: 1.5rem;
+    }
+
+    #section-2 p {
+        font-size: .9rem;
+    }
+
+    #section-2 .img-david {
+        width: 200px;
+    }
+
+    /*section 3*/
+
+    #section-3 h2 {
+        font-size: .9rem;
+        color: #141414;
+        font-weight: bold;
+    }
+
+    /*section 4*/ 
+
+    .rectangulo-1 {
+        width: 300px;
+    }
+
+    .rectangulo-1 img {
+        width: 250px;
+    }
+
+    .rectangulo-1 button {
+        left: 10%;
+    }
+
+    /*footer*/
+
+    
+    footer {
+        display: inline-block;
+        padding: 50px;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+
+    footer img {
+        width: 90px;
+        margin-left: 30%;
+    }
+}
+
+/*tablets*/
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    #logo {
+        padding: 50px;
+    }
+
+    nav {
+        padding-top: 200px;
+        display: inline-block;
+    }
+
+    nav.main-navigation {
+        width: 100%;
+        position: static;
+    }
+
+    nav ul li a {
+        left: 95px;
+        font-size: .8rem;
+    }
+
+    nav.main-navigation {
+        left: 50px;
+    }
+
+    .active {
+        color: #665c4f;
+    }
+
+    .active::before {
+        color: #665c4f;
+        width: 0;
+    }
+
+
+    .fondo-oscuro {
+        border-bottom: none;
+        
+    }
+
+    /*section 2*/
+    
+    #section-2 .img-david {
+        width: 300px;
+    }
+
+    #section-2 {
+        background-size: 100%;
+    }
+
+    /*footer*/
+
+    footer {
+        display: inline-block;
+        padding: 50px;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+
+    footer img {
+        width: 90px;
+        margin-left: 40%;
+    }
+
+}
+  
