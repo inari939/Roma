@@ -1,0 +1,24 @@
+Alumna: 
+Alexandra Ramirez
+
+Documento: 
+41.785.165
+
+Carrera: 
+Diseño y desarrollo web
+
+Comision: A
+
+Turno: Noche
+
+Año: 2024
+
+Profesor: Carlos Ferrer
+
+Fecha de examen final: 01/08/2024 19:00hs
+
+El sitio web desarrollado trata acerca de la ciudad de Roma. Información acerca de hoteles y lugares turísticos para visitar.
+
+Para el desarrollo del sitio web se utilizó HTML y CSS unicamente.
+Se desarrollaron los medias querys para poder visualizarse tanto en pantallas de celulares como en tablets.
+Para versión móvil se utilizó la medida de 480px como máximo y para tablets se utilizó la medida 768px como máximo.
